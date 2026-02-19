@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Acesso Encerrado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+    .box {
+      background: rgba(255,255,255,0.05);
+      padding: 40px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      max-width: 400px;
+    }
+    h1 {
+      margin-bottom: 15px;
+    }
+    p {
+      opacity: 0.8;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background: #3b82f6;
+      color: white;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Versão de Teste Encerrada</h1>
+    <p>O período de visualização foi finalizado.<br>
+    Entre em contato para ativar a versão completa.</p>
+    <button class="btn" onclick="window.location.href='mailto:seuemail@email.com'">
+      Solicitar Ativação
+    </button>
+  </div>
+</body>
+</html>
