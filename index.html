@@ -7,7 +7,7 @@
     <meta name="description" content="Estética automotiva de alto padrão em Campo Largo – PR. Polimento, higienização e remoção de ferrugens com acabamento de luxo.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/src/logo.png">
+    <link rel="icon" type="image/png" href="src/logo.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,11 +52,12 @@
             -webkit-text-fill-color: transparent;
         }
         .bg-overlay {
-            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.98));
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.95));
         }
         .service-card:hover {
             transform: translateY(-8px);
         }
+        /* Reveal animation only for sections after Hero */
         .reveal {
             opacity: 0;
             transform: translateY(20px);
@@ -74,7 +75,6 @@
             width: 100%;
             height: 100%;
         }
-        /* Ajuste para evitar corte de conteúdo em telas pequenas */
         @media (max-width: 640px) {
             .hero-title {
                 font-size: 2.25rem !important;
@@ -90,7 +90,7 @@
         <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 flex justify-between items-center">
             <div class="flex items-center">
                 <a href="#" class="flex items-center group">
-                    <img src="/src/logo.png" alt="JVF Garagem Detail" class="h-12 md:h-20 lg:h-24 w-auto object-contain transition-all duration-500 group-hover:scale-105" id="nav-logo">
+                    <img src="src/logo.png" alt="JVF Garagem Detail" class="h-12 md:h-20 lg:h-24 w-auto object-contain transition-all duration-500 group-hover:scale-105" id="nav-logo">
                     <div class="ml-3 flex flex-col justify-center">
                         <span class="font-heading font-bold text-lg md:text-xl lg:text-2xl tracking-tighter leading-none">JVF</span>
                         <span class="text-brand-gold font-heading font-bold text-xs md:text-sm lg:text-base tracking-[0.2em] leading-none uppercase">Garagem Detail</span>
@@ -126,7 +126,7 @@
         <a href="https://wa.me/554185374986" class="bg-brand-gold text-brand-black px-10 py-4 rounded-sm font-bold uppercase mt-4">WhatsApp</a>
     </div>
 
-    <!-- Seção Hero -->
+    <!-- Seção Hero (Animações removidas para carregar instantâneo) -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1603584173870-7f3ca93096b7?auto=format&fit=crop&q=80&w=2000" alt="Detalhamento Automotivo Premium" class="w-full h-full object-cover">
@@ -134,11 +134,11 @@
         </div>
         
         <div class="relative z-10 text-center px-4 md:px-6 max-w-5xl">
-            <p class="text-brand-gold font-semibold tracking-[0.4em] uppercase text-xs md:text-sm mb-6 reveal">Excelência Automotiva em Campo Largo</p>
-            <h1 class="hero-title text-4xl md:text-6xl lg:text-8xl font-heading font-bold mb-8 leading-tight reveal" style="transition-delay: 200ms;">Brilho e Proteção <br><span class="text-gradient uppercase">JVF Garagem Detail</span></h1>
-            <p class="text-brand-gray text-base md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto font-light leading-relaxed reveal" style="transition-delay: 400ms;">O cuidado meticuloso que transforma e preserva o valor real do seu automóvel com técnicas de ponta.</p>
+            <p class="text-brand-gold font-semibold tracking-[0.4em] uppercase text-xs md:text-sm mb-6">Excelência Automotiva em Campo Largo</p>
+            <h1 class="hero-title text-4xl md:text-6xl lg:text-8xl font-heading font-bold mb-8 leading-tight">Brilho e Proteção <br><span class="text-gradient uppercase">JVF Garagem Detail</span></h1>
+            <p class="text-brand-gray text-base md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto font-light leading-relaxed">O cuidado meticuloso que transforma e preserva o valor real do seu automóvel com técnicas de ponta.</p>
             
-            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center reveal" style="transition-delay: 600ms;">
+            <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
                 <a href="https://wa.me/554185374986" class="w-full sm:w-auto bg-brand-gold text-brand-black px-12 py-5 rounded-sm font-bold text-lg gold-glow transition-all flex items-center justify-center gap-3">
                     <i data-lucide="message-circle" class="w-6 h-6"></i> Agendar Agora
                 </a>
@@ -148,8 +148,9 @@
             </div>
         </div>
         
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-40 hidden md:block">
-            <i data-lucide="mouse" class="w-8 h-8"></i>
+        <!-- Seta de Scroll Ajustada -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
+            <i data-lucide="chevrons-down" class="w-8 h-8 text-brand-gold"></i>
         </div>
     </section>
 
@@ -158,9 +159,9 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-12 grid md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div class="reveal">
                 <div class="relative group">
-                    <img src="/src/jvf.png" alt="Processo de Detalhamento JVF Garagem Detail" class="rounded-sm shadow-2xl transition-all duration-1000 w-full aspect-[4/5] object-cover" onerror="this.src='https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&q=80&w=1000'">
+                    <img src="src/jvf.png" alt="Processo de Detalhamento JVF Garagem Detail" class="rounded-sm shadow-2xl transition-all duration-1000 w-full aspect-[4/5] object-cover" onerror="this.src='https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&q=80&w=1000'">
                     <div class="absolute -bottom-4 md:-bottom-8 -right-4 md:-right-8 bg-brand-gold p-6 md:p-10 shadow-2xl transition-transform group-hover:scale-105">
-                        <img src="/src/logo.png" alt="Logo JVF" class="h-16 md:h-24 w-auto invert brightness-0">
+                        <img src="src/logo.png" alt="Logo JVF" class="h-16 md:h-24 w-auto invert brightness-0">
                     </div>
                 </div>
             </div>
@@ -213,62 +214,62 @@
                     <h4 class="text-xl md:text-2xl font-heading font-bold mb-5">Higienização</h4>
                     <p class="text-brand-gray text-sm md:text-base leading-relaxed mb-6">Limpeza interna profunda com extração de impurezas, desinfecção e revitalização de plásticos e couros.</p>
                 </div>
-                <!-- Remoção de Ferrugens -->
+                <!-- Vitrificação -->
                 <div class="service-card bg-brand-black p-8 md:p-12 border border-white/5 transition-all duration-500 reveal sm:col-span-2 md:col-span-1" style="transition-delay: 200ms;">
                     <div class="bg-brand-charcoal w-16 h-16 rounded-full flex items-center justify-center mb-8 border border-brand-gold/20">
-                        <i data-lucide="shield-alert" class="text-brand-gold w-8 h-8"></i>
+                        <i data-lucide="shield-check" class="text-brand-gold w-8 h-8"></i>
                     </div>
-                    <h4 class="text-xl md:text-2xl font-heading font-bold mb-5">Remoção de Ferrugens</h4>
-                    <p class="text-brand-gray text-sm md:text-base leading-relaxed mb-6">Descontaminação química e física para eliminar pontos de oxidação, protegendo a integridade das partes metálicas.</p>
+                    <h4 class="text-xl md:text-2xl font-heading font-bold mb-5">Vitrificação</h4>
+                    <p class="text-brand-gray text-sm md:text-base leading-relaxed mb-6">Proteção de alta performance que cria uma camada vítrea sobre a pintura, repelindo sujeira e raios UV.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Galeria (.mp4) -->
+    <!-- Seção Galeria Atualizada -->
     <section id="gallery" class="py-20 md:py-32 bg-brand-black">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 reveal">
                 <div>
                     <h2 class="text-brand-gold uppercase tracking-[0.3em] text-xs font-bold mb-3">Vídeos</h2>
-                    <h3 class="text-3xl md:text-5xl font-heading font-bold uppercase">Resultados Impecáveis</h3>
+                    <h3 class="text-3xl md:text-5xl font-heading font-bold uppercase">Nossos Resultados</h3>
                 </div>
                 <a href="https://www.instagram.com/jvf_estetica_automotiva_?igsh=MWttYmFqZGtyNW0xNQ%3D%3D&utm_source=qr" target="_blank" class="group flex items-center gap-3 text-brand-gold font-bold uppercase text-xs md:text-sm tracking-widest border-b border-brand-gold/30 pb-2 hover:border-brand-gold transition-all">
-                    Acompanhe nosso Dia a Dia <i data-lucide="instagram" class="w-4 h-4 group-hover:rotate-12 transition-transform"></i>
+                    Acompanhe no Instagram <i data-lucide="instagram" class="w-4 h-4 group-hover:rotate-12 transition-transform"></i>
                 </a>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-8 reveal">
-                <!-- Vídeo 1 -->
+                <!-- Projeto 1 -->
                 <div class="relative group overflow-hidden aspect-[9/16] bg-brand-charcoal shadow-2xl">
                     <video autoplay muted loop playsinline class="absolute inset-0 grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100">
-                        <source src="/src/1.mp4" type="video/mp4">
+                        <source src="src/1.mp4" type="video/mp4">
                     </video>
                     <div class="absolute inset-0 bg-brand-black/30 group-hover:bg-transparent transition-all duration-500"></div>
                     <div class="absolute bottom-6 left-6 z-10">
-                        <span class="text-brand-gold font-heading font-bold text-lg md:text-xl tracking-widest border-l-4 border-brand-gold pl-4 uppercase">Polimento</span>
+                        <span class="text-brand-gold font-heading font-bold text-lg md:text-xl tracking-widest border-l-4 border-brand-gold pl-4 uppercase">POLIMENTO</span>
                     </div>
                 </div>
                 
-                <!-- Vídeo 2 -->
+                <!-- Projeto 2 -->
                 <div class="relative group overflow-hidden aspect-[9/16] bg-brand-charcoal shadow-2xl">
                     <video autoplay muted loop playsinline class="absolute inset-0 grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100">
-                        <source src="/src/2.mp4" type="video/mp4">
+                        <source src="src/2.mp4" type="video/mp4">
                     </video>
                     <div class="absolute inset-0 bg-brand-black/30 group-hover:bg-transparent transition-all duration-500"></div>
                     <div class="absolute bottom-6 left-6 z-10">
-                        <span class="text-brand-gold font-heading font-bold text-lg md:text-xl tracking-widest border-l-4 border-brand-gold pl-4 uppercase">Vitrificação</span>
+                        <span class="text-brand-gold font-heading font-bold text-lg md:text-xl tracking-widest border-l-4 border-brand-gold pl-4 uppercase">VITRIFICAÇÃO</span>
                     </div>
                 </div>
 
-                <!-- Vídeo 3 -->
+                <!-- Projeto 3 -->
                 <div class="relative group overflow-hidden aspect-[9/16] bg-brand-charcoal shadow-2xl">
                     <video autoplay muted loop playsinline class="absolute inset-0 grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100">
-                        <source src="/src/3.mp4" type="video/mp4">
+                        <source src="src/3.mp4" type="video/mp4">
                     </video>
                     <div class="absolute inset-0 bg-brand-black/30 group-hover:bg-transparent transition-all duration-500"></div>
                     <div class="absolute bottom-6 left-6 z-10">
-                        <span class="text-brand-gold font-heading font-bold text-lg md:text-xl tracking-widest border-l-4 border-brand-gold pl-4 uppercase">Higienização</span>
+                        <span class="text-brand-gold font-heading font-bold text-lg md:text-xl tracking-widest border-l-4 border-brand-gold pl-4 uppercase">HIGIENIZAÇÃO</span>
                     </div>
                 </div>
             </div>
@@ -334,7 +335,7 @@
     <footer class="bg-brand-black border-t border-white/10 py-20">
         <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
             <div class="sm:col-span-2 lg:col-span-2">
-                <img src="logo.png" alt="JVF Garagem Detail" class="h-24 md:h-32 w-auto mb-8 object-contain">
+                <img src="src/logo.png" alt="JVF Garagem Detail" class="h-24 md:h-32 w-auto mb-8 object-contain">
                 <p class="text-brand-gray max-w-sm text-sm md:text-base font-light leading-relaxed">Especialistas em detalhamento automotivo premium em Campo Largo – PR. Onde cada detalhe é levado a sério.</p>
             </div>
             
@@ -364,6 +365,7 @@
         
         <div class="max-w-7xl mx-auto px-6 lg:px-12 mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-brand-gray uppercase tracking-[0.3em] font-medium">
             <p>© <span id="current-year"></span> JVF Garagem Detail. Todos os direitos reservados.</p>
+            <p class="flex items-center gap-2">Design & Performance <i data-lucide="bolt" class="w-3 h-3 text-brand-gold"></i></p>
         </div>
     </footer>
 
@@ -427,14 +429,12 @@
             }
         });
 
-        // Garantir que vídeos carreguem e toquem (especialmente mobile)
+        // Garantir que vídeos carreguem e toquem
         document.querySelectorAll('video').forEach(video => {
             video.addEventListener('canplay', () => {
-                video.play().catch(error => console.log("Auto-play blocked, awaiting interaction."));
+                video.play().catch(error => console.log("Auto-play blocked"));
             });
         });
     </script>
 </body>
 </html>
-
-
