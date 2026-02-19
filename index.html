@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>JVF Garagem Detail</title>
     <meta name="description" content="Estética automotiva de alto padrão em Campo Largo – PR. Polimento, higienização e remoção de ferrugens com acabamento de luxo.">
     
@@ -57,7 +58,6 @@
         .service-card:hover {
             transform: translateY(-8px);
         }
-        /* Reveal animation only for sections after Hero */
         .reveal {
             opacity: 0;
             transform: translateY(20px);
@@ -126,7 +126,7 @@
         <a href="https://wa.me/554185374986" class="bg-brand-gold text-brand-black px-10 py-4 rounded-sm font-bold uppercase mt-4">WhatsApp</a>
     </div>
 
-    <!-- Seção Hero (Animações removidas para carregar instantâneo) -->
+    <!-- Seção Hero -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1603584173870-7f3ca93096b7?auto=format&fit=crop&q=80&w=2000" alt="Detalhamento Automotivo Premium" class="w-full h-full object-cover">
@@ -140,7 +140,8 @@
             
             <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
                 <a href="https://wa.me/554185374986" class="w-full sm:w-auto bg-brand-gold text-brand-black px-12 py-5 rounded-sm font-bold text-lg gold-glow transition-all flex items-center justify-center gap-3">
-                    <i data-lucide="message-circle" class="w-6 h-6"></i> Agendar Agora
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="m8 13 4-4 4 4"/><path d="M12 9v9"/></svg>
+                    Agendar Agora
                 </a>
                 <a href="#services" class="w-full sm:w-auto border border-white/20 hover:border-brand-gold hover:bg-white/5 px-12 py-5 rounded-sm font-medium text-lg transition-all backdrop-blur-sm uppercase tracking-widest">
                     Nossos Serviços
@@ -148,9 +149,9 @@
             </div>
         </div>
         
-        <!-- Seta de Scroll Ajustada -->
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-60">
-            <i data-lucide="chevrons-down" class="w-8 h-8 text-brand-gold"></i>
+        <!-- Seta de Scroll (SVG Inline para evitar o erro do ponto de interrogação) -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 13 5 5 5-5"/><path d="m7 6 5 5 5-5"/></svg>
         </div>
     </section>
 
@@ -226,7 +227,7 @@
         </div>
     </section>
 
-    <!-- Seção Galeria Atualizada -->
+    <!-- Seção Galeria -->
     <section id="gallery" class="py-20 md:py-32 bg-brand-black">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 reveal">
@@ -246,7 +247,8 @@
                         <source src="src/1.mp4" type="video/mp4">
                     </video>
                     <div class="absolute inset-0 bg-brand-black/30 group-hover:bg-transparent transition-all duration-500"></div>
-                    <div class="absolute bottom-6 left-6 z-10">
+                    <div class="absolute bottom-6 left-6 z-10 flex flex-col">
+                        <span class="text-white/60 text-[10px] font-bold tracking-[0.3em] mb-1">PROJETO 1</span>
                         <span class="text-brand-gold font-heading font-bold text-lg md:text-xl tracking-widest border-l-4 border-brand-gold pl-4 uppercase">POLIMENTO</span>
                     </div>
                 </div>
@@ -257,7 +259,8 @@
                         <source src="src/2.mp4" type="video/mp4">
                     </video>
                     <div class="absolute inset-0 bg-brand-black/30 group-hover:bg-transparent transition-all duration-500"></div>
-                    <div class="absolute bottom-6 left-6 z-10">
+                    <div class="absolute bottom-6 left-6 z-10 flex flex-col">
+                        <span class="text-white/60 text-[10px] font-bold tracking-[0.3em] mb-1">PROJETO 2</span>
                         <span class="text-brand-gold font-heading font-bold text-lg md:text-xl tracking-widest border-l-4 border-brand-gold pl-4 uppercase">VITRIFICAÇÃO</span>
                     </div>
                 </div>
@@ -268,7 +271,8 @@
                         <source src="src/3.mp4" type="video/mp4">
                     </video>
                     <div class="absolute inset-0 bg-brand-black/30 group-hover:bg-transparent transition-all duration-500"></div>
-                    <div class="absolute bottom-6 left-6 z-10">
+                    <div class="absolute bottom-6 left-6 z-10 flex flex-col">
+                        <span class="text-white/60 text-[10px] font-bold tracking-[0.3em] mb-1">PROJETO 3</span>
                         <span class="text-brand-gold font-heading font-bold text-lg md:text-xl tracking-widest border-l-4 border-brand-gold pl-4 uppercase">HIGIENIZAÇÃO</span>
                     </div>
                 </div>
@@ -326,7 +330,7 @@
             <h2 class="text-3xl md:text-6xl font-heading font-bold mb-10 leading-tight">Seu automóvel merece o padrão <span class="text-brand-gold">Detail</span>.</h2>
             <p class="text-brand-gray text-lg md:text-xl mb-14 font-light">Transforme agora o visual do seu veículo com a JVF Garagem Detail.</p>
             <a href="https://wa.me/554185374986" class="inline-flex items-center gap-4 bg-brand-gold text-brand-black px-12 md:px-16 py-5 md:py-6 rounded-sm font-bold text-lg md:text-2xl hover:scale-105 transition-all gold-glow uppercase tracking-widest">
-                Falar com um Especialista <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                Falar com um Especialista <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
         </div>
     </section>
@@ -438,4 +442,3 @@
     </script>
 </body>
 </html>
-
