@@ -1,6 +1,5 @@
 # 🚗 JVF Garagem Detail - Landing Page
 
-![Preview](link-para-screenshot-do-site)
 
 Landing page profissional desenvolvida para a **JVF Garagem Detail**, uma estética automotiva de alto padrão localizada em Campo Largo/PR. O projeto foi criado para transmitir sofisticação, confiança e a qualidade dos serviços de detalhamento automotivo premium.
 
