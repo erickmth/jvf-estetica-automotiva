@@ -1,6 +1,5 @@
 # 🍧 Yees Açaí - Landing Page
 
-![Preview](link-para-screenshot-do-site)
 
 Landing page profissional desenvolvida para a **Yees Açaí**, uma lanchonete especializada em açaí localizada em Campo Largo/PR. O projeto foi criado com foco em conversão, experiência mobile e identidade visual marcante.
 
@@ -40,14 +39,3 @@ Adaptado para todos os tamanhos de tela:
 - 📱 Tablets (768px - 1024px)
 - 💻 Desktops (1025px+)
 
-## 🔗 Links Importantes
-
-- **WhatsApp:** [419985508551](https://wa.me/5541998550855)
-- **Instagram:** [@yees_acai](https://www.instagram.com/yees_acai/)
-- **Localização:** Rua Mato Grosso, 9881 - Campo Largo/PR
-
-## 🛠️ Como Executar
-
-1. Clone o repositório
-   ```bash
-   git clone https://github.com/seu-usuario/yees-acai-landing.git
